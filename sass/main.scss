@@ -104,9 +104,6 @@ $shadow: drop-shadow(0px 0px 20px rgba(58, 58, 58, 0.5));
         p{
             @include font-settings($main-text, 300);                        
         }
-        div{
-
-        }
         div:nth-child(1){
             @include background-settings('../img/clean.png', 8%, top left);
         }
@@ -133,7 +130,60 @@ $shadow: drop-shadow(0px 0px 20px rgba(58, 58, 58, 0.5));
 
 /* about */
 #about{
-    display: grid;
-    grid-template: auto auto auto / 1fr 1fr 1fr;
-    @include background-settings('../img/about-bg.jpg', cover);    
+    padding: 120px 0;
+    @extend .flex-center;
+    @include background-settings('../img/about-bg.jpg', cover, top);
+    #about-wrapper{
+        display: grid;
+        grid-template: auto auto auto / 1fr 1fr 1fr;
+        grid-gap: 100px 75px;
+        #about-title{
+            grid-column: 1 / 4;
+            h1{
+                margin: 0;
+                @include font-settings($title + 2px, 300, $c-white);
+            }
+            p{
+                @include font-settings($main-text + 2px, 300, $c-white);            
+            }
+            hr{
+                margin: 40px 0;
+                width: 80px;
+                border: 1px solid $c-white;
+            }
+        }
+        h2{
+            @include font-settings($tiny-title, 300, $c-white)            
+        }
+        p{
+            @include font-settings($main-text, 300, $c-white);                        
+        }
+    }
+}
+
+/* video */
+#video{
+    min-height: 670px;
+    @extend .flex-center;
+    @include background-settings('../img/img-bg.png', cover, center);
+    #video-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        p{
+            display: flex;
+            align-items: center;
+            @include font-settings($main-text + 2px, 300, $c-white);
+        }
+        p:nth-child(1){
+            text-align: left;            
+            img{
+                margin-right: 20px;
+                cursor: pointer;
+            }   
+        }
+        p:nth-child(2){
+            text-align: right;
+            justify-content: flex-end;
+        }
+    }
 }

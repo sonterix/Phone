@@ -41,6 +41,10 @@ ul li{
     background-color: $c-pink;
     border-color: $c-pink;;    
 }
+.wrapper{
+    max-width: 1200px;
+    width: 100%;
+}
 
 /* mixin */
 @mixin font-settings($size, $weight, $color:$c-grey) {
