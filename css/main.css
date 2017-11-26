@@ -21,7 +21,7 @@ ul li {
 }
 
 /* classes */
-.flex-center, #header #logo, #header nav {
+.flex-center, #header #logo, #header nav, #features #features-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,9 +39,14 @@ ul li {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
-  background: #7954b6;
+  background-color: #7954b6;
   border: 1px solid #7954b6;
   border-radius: 30px;
+}
+
+.main-btn:hover {
+  background-color: #dd4387;
+  border-color: #dd4387;
 }
 
 /* mixin */
@@ -62,9 +67,9 @@ ul li {
 
 #header #logo h1 {
   margin: 20px 30px;
-  color: #fff;
   font-size: 36px;
   font-weight: 700;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -83,13 +88,17 @@ ul li {
 #header nav ul a {
   margin: 0px 15px;
   padding: 5px 15px;
-  color: #fff;
   font-size: 14px;
   font-weight: 700;
+  color: #fff;
 }
 
 #header #header-phone {
   filter: drop-shadow(0px 0px 20px rgba(58, 58, 58, 0.5));
+  background-image: url("../img/phone.png");
+  background-size: contain;
+  background-position: 80% bottom;
+  background-repeat: no-repeat;
   background-image: url("../img/phone.png");
   background-size: contain;
   background-position: 80% bottom;
@@ -99,12 +108,12 @@ ul li {
 #header #header-content {
   margin: 40px 10%;
   width: 55%;
-  color: #fff;
 }
 
 #header #header-content h1 {
   font-size: 50px;
   font-weight: 300;
+  color: #fff;
 }
 
 #header #header-content p {
@@ -112,4 +121,110 @@ ul li {
   margin-bottom: 90px;
   font-size: 18px;
   font-weight: 300;
+  color: #fff;
+}
+
+/* features */
+#features {
+  display: grid;
+  grid-template: auto 1fr / 1.2fr 1fr;
+  padding: 120px 0;
+}
+
+#features #features-title {
+  grid-column: 1 / 3;
+  margin-bottom: 100px;
+}
+
+#features #features-title h1, #features #features-title p {
+  width: 40%;
+  text-align: center;
+}
+
+#features #features-title h1 {
+  margin: 10px 0;
+  font-size: 48px;
+  font-weight: 300;
+  color: #7954b6;
+}
+
+#features #features-title p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #565656;
+}
+
+#features #features-slider {
+  background-image: url("../img/content.png");
+  background-size: 65%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#features #features-content h2, #features #features-content p {
+  width: 50%;
+  padding-left: 12%;
+}
+
+#features #features-content h2 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #7954b6;
+}
+
+#features #features-content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #565656;
+}
+
+#features #features-content div:nth-child(1) {
+  background-image: url("../img/clean.png");
+  background-size: 8%;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#features #features-content div:nth-child(2) {
+  background-image: url("../img/support.png");
+  background-size: 8%;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#features #features-content div:nth-child(3) {
+  background-image: url("../img/customize.png");
+  background-size: 8%;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#features #features-content div:nth-child(4) {
+  background-image: url("../img/multiple.png");
+  background-size: 8%;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+#features #features-content div:nth-child(5) {
+  font-size: 16px;
+  font-weight: 300;
+  color: #565656;
+  margin-top: 100px;
+}
+
+#features #features-content div:nth-child(5) span {
+  color: #dd4387;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* about */
+#about {
+  display: grid;
+  grid-template: auto auto auto / 1fr 1fr 1fr;
+  background-image: url("../img/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

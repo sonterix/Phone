@@ -33,9 +33,28 @@ ul li{
         size: $main-text + 2px;
         weight: 700;
     }
-    background: $c-purple;
+    background-color: $c-purple;
     border: 1px solid $c-purple;
     border-radius: 30px; 
 }
+.main-btn:hover{
+    background-color: $c-pink;
+    border-color: $c-pink;;    
+}
 
 /* mixin */
+@mixin font-settings($size, $weight, $color:$c-grey) {
+    font: {
+        size: $size;
+        weight: $weight;
+    }
+    color: $color;
+}
+@mixin background-settings($url, $size, $position:center){
+    background: {
+        image: url($url);
+        size: $size;
+        position: $position;
+        repeat: no-repeat;
+    }
+}
