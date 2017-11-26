@@ -20,8 +20,13 @@ ul li {
   list-style: none;
 }
 
+h1::selection, h2::selection, h3::selection, h4::selection, p::selection, a::selection, li::selection {
+  color: #fff;
+  background-color: #7954b6;
+}
+
 /* classes */
-.flex-center, #header #logo, #header nav, #features #features-title, #about, #video {
+.flex-center, #header #logo, #header nav, #features #features-title, #about, #video, #pricing {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -387,4 +392,47 @@ ul li {
   width: 6px;
   height: 6px;
   cursor: pointer;
+}
+
+/* pricing */
+#pricing {
+  padding: 120px 0;
+}
+
+#pricing #pricing-wrapper {
+  display: grid;
+  grid-template: auto auto / 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
+#pricing #pricing-wrapper #pricing-title {
+  grid-column: 1 / 4;
+  margin-bottom: 50px;
+}
+
+#pricing #pricing-wrapper #pricing-title h1, #pricing #pricing-wrapper #pricing-title p {
+  text-align: center;
+}
+
+#pricing #pricing-wrapper #pricing-title h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 300;
+  color: #7954b6;
+}
+
+#pricing #pricing-wrapper #pricing-title p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #565656;
+}
+
+#pricing #pricing-wrapper #pricing-title hr {
+  margin: 60px auto;
+  width: 80px;
+  border: 1px solid #dd4387;
+}
+
+#pricing #pricing-wrapper .price-box {
+  text-align: center;
 }

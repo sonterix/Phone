@@ -13,6 +13,10 @@ ul{
 ul li{
     list-style: none;
 }
+h1::selection,h2::selection,h3::selection,h4::selection,p::selection,a::selection,li::selection{
+    color: $c-white;
+    background-color: $c-purple;
+}
 
 /* classes */
 .flex-center{
