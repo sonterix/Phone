@@ -1,6 +1,115 @@
 /* main colors */
+/* connect */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800");
 /* main settings */
 body {
   margin: 0;
   padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* classes */
+.flex-center, #header #logo, #header nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.main-btn {
+  padding: 15px 35px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  background: #7954b6;
+  border: 1px solid #7954b6;
+  border-radius: 30px;
+}
+
+/* mixin */
+/* header */
+#header {
+  display: grid;
+  grid-template: auto 1fr / 1fr 1fr;
+  min-height: 760px;
+  background-image: url("../img/header-bg.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+#header #logo {
+  align-items: flex-start;
+}
+
+#header #logo h1 {
+  margin: 20px 30px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#header #logo h1:hover {
+  color: #7954b6;
+}
+
+#header nav {
+  align-items: flex-end;
+}
+
+#header nav ul {
+  display: inherit;
+}
+
+#header nav ul a {
+  margin: 0px 15px;
+  padding: 5px 15px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#header #header-phone {
+  filter: drop-shadow(0px 0px 20px rgba(58, 58, 58, 0.5));
+  background-image: url("../img/phone.png");
+  background-size: contain;
+  background-position: 80% bottom;
+  background-repeat: no-repeat;
+}
+
+#header #header-content {
+  margin: 40px 10%;
+  width: 55%;
+  color: #fff;
+}
+
+#header #header-content h1 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+#header #header-content p {
+  margin-top: 30px;
+  margin-bottom: 90px;
+  font-size: 18px;
+  font-weight: 300;
 }
