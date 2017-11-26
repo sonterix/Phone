@@ -22,8 +22,12 @@ ul li{
     align-items: center;
 }
 .active{
-    border: 2px solid $c-white;
-    border-radius: 20px;
+    border: 2px solid $c-white !important;
+    border-radius: 20px !important;
+}
+.active-dot{
+    background-color: $c-purple !important;
+    border-color: $c-purple !important;
 }
 .main-btn{
     padding: 15px 35px;

@@ -5,6 +5,12 @@
         $('.active').removeClass('active');
         $(this).addClass('active');
     })
+
+    // click dot
+    $('#dots span').on('click', function(){
+        $('.active-dot').removeClass('active-dot');
+        $(this).addClass('active-dot');
+    })
     
     // animate scroll
     $('body').on('click', 'a[href^="#"]', function() {
