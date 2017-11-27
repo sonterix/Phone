@@ -3,7 +3,9 @@ $c-white: #fff;
 $c-purple: #7954b6;
 $c-pink: #dd4387;
 $c-grey: #565656;
+$c-grey-light: #ccc;
 $font-family: 'Open Sans', sans-serif;
+$font-family-2: 'Roboto', sans-serif;
 $title: 48px;
 $tiny-title: 24px;
 $main-text: 16px;
@@ -11,6 +13,7 @@ $shadow: drop-shadow(0px 0px 20px rgba(58, 58, 58, 0.5));
 
 /* connect */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 @import 'usage';
 
 /* header */
@@ -230,8 +233,8 @@ $shadow: drop-shadow(0px 0px 20px rgba(58, 58, 58, 0.5));
             margin: 20px 26%;
             span{
                 margin: 5px;
-                background-color: #ccc;
-                border: 1px solid #ccc;
+                background-color: $c-grey-light;
+                border: 1px solid $c-grey-light;
                 border-radius: 50%;
                 width: 6px;
                 height: 6px;
@@ -248,7 +251,7 @@ $shadow: drop-shadow(0px 0px 20px rgba(58, 58, 58, 0.5));
     #pricing-wrapper{
         display: grid;
         grid-template: auto auto / 1fr 1fr 1fr;
-        grid-column-gap: 120px;
+        grid-column-gap: 100px;
         #pricing-title{
             grid-column: 1 / 4;
             margin-bottom: 50px;
@@ -296,7 +299,7 @@ $shadow: drop-shadow(0px 0px 20px rgba(58, 58, 58, 0.5));
                     @include font-settings($main-text + 2px, 300);
                     padding: 10px 0;
                     i{
-                        color: #ccc;
+                        color: $c-grey-light;
                         padding: 0 15px;
                     }
                 }
@@ -306,4 +309,97 @@ $shadow: drop-shadow(0px 0px 20px rgba(58, 58, 58, 0.5));
             }
         }
    }
+}
+
+/* clients */
+#clients{
+    padding: 120px 0;
+    #clients-title{
+        grid-column: 1 / 4;
+        margin-bottom: 50px;
+        h1, p{
+            text-align: center;
+        }
+        h1{
+            margin: 0;                        
+            @include font-settings($title, 300, $c-purple);
+        }
+        p{
+            @include font-settings($main-text + 2px, 300);            
+        }
+        hr{
+            margin: 60px auto;
+            width: 80px;
+            border: 1px solid $c-pink;
+        }
+    }
+    #clients-slider{
+        @extend .flex-center;
+        flex-direction: row;
+        .clients-slider-wrapper{
+            display: grid;
+            grid-template: auto auto auto auto auto auto / 1fr 5fr 2fr;
+            margin: 0 1%;  
+            padding: 30px 2%;
+            max-width: 510px;
+            border: 1px solid $c-grey-light;
+            border-radius: 10px;
+            font-family: $font-family-2;
+            .clients-img{
+                @include background-settings('../img/man.png', contain, center)
+            }
+            .clients-data{
+                padding: 8px 20px;
+                h3{
+                    @include font-settings($tiny-title, 400, $c-purple);
+                    margin: 0;         
+                }
+                p{
+                    @include font-settings($main-text + 2px, 400, $c-grey-light);            
+                    margin: 0;  
+                }
+            }
+            .clients-btn{
+                @extend .flex-center;
+                a{  
+                    @include font-settings($main-text - 2px, 400, $c-purple);      
+                    display: block;
+                    padding: 3px 12px;
+                    color: $c-purple;
+                    border: 1px solid $c-purple;
+                    border-radius: 5px;
+                }
+            }
+            hr{
+                grid-column: 1 / 4;
+                margin-top: 25px;
+                width: 100%;
+                border: 1px solid $c-grey-light;
+            }
+            .clients-text{
+                grid-column: 1 / 4;
+                p{
+                    @include font-settings($main-text, 400, $c-grey);
+                    line-height: 30px;
+                    margin: 5px 0;       
+                }
+            }
+            .client-date{
+                @include font-settings($main-text, 300, $c-grey-light);
+                grid-column: 1 / 4;
+                margin: 5px 0;
+            }
+            .client-icon{
+                grid-column: 1 / 4;
+                color: $c-grey-light;
+                i{
+                    margin-top: 15px;
+                    font-size: 20px;
+                }
+                i:nth-child(2){
+                    margin: 0 10px; 
+                }
+            }
+        }
+    }
 }

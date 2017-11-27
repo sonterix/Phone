@@ -1,6 +1,7 @@
 /* main colors */
 /* connect */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
 /* main settings */
 body {
   margin: 0;
@@ -26,7 +27,7 @@ h1::selection, h2::selection, h3::selection, h4::selection, p::selection, a::sel
 }
 
 /* classes */
-.flex-center, #header #logo, #header nav, #features #features-title, #about, #video, #pricing {
+.flex-center, #header #logo, #header nav, #features #features-title, #about, #video, #pricing, #clients #clients-slider, #clients #clients-slider .clients-slider-wrapper .clients-btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -408,7 +409,7 @@ h1::selection, h2::selection, h3::selection, h4::selection, p::selection, a::sel
 #pricing #pricing-wrapper {
   display: grid;
   grid-template: auto auto / 1fr 1fr 1fr;
-  grid-column-gap: 120px;
+  grid-column-gap: 100px;
 }
 
 #pricing #pricing-wrapper #pricing-title {
@@ -491,4 +492,129 @@ h1::selection, h2::selection, h3::selection, h4::selection, p::selection, a::sel
 
 #pricing #pricing-wrapper .price-box a {
   margin: 40px auto;
+}
+
+/* clients */
+#clients {
+  padding: 120px 0;
+}
+
+#clients #clients-title {
+  grid-column: 1 / 4;
+  margin-bottom: 50px;
+}
+
+#clients #clients-title h1, #clients #clients-title p {
+  text-align: center;
+}
+
+#clients #clients-title h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 300;
+  color: #7954b6;
+}
+
+#clients #clients-title p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #565656;
+}
+
+#clients #clients-title hr {
+  margin: 60px auto;
+  width: 80px;
+  border: 1px solid #dd4387;
+}
+
+#clients #clients-slider {
+  flex-direction: row;
+}
+
+#clients #clients-slider .clients-slider-wrapper {
+  display: grid;
+  grid-template: auto auto auto auto auto auto / 1fr 5fr 2fr;
+  margin: 0 1%;
+  padding: 30px 2%;
+  max-width: 510px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+#clients #clients-slider .clients-slider-wrapper .clients-img {
+  background-image: url("../img/man.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#clients #clients-slider .clients-slider-wrapper .clients-data {
+  padding: 8px 20px;
+}
+
+#clients #clients-slider .clients-slider-wrapper .clients-data h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #7954b6;
+  margin: 0;
+}
+
+#clients #clients-slider .clients-slider-wrapper .clients-data p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ccc;
+  margin: 0;
+}
+
+#clients #clients-slider .clients-slider-wrapper .clients-btn a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7954b6;
+  display: block;
+  padding: 3px 12px;
+  color: #7954b6;
+  border: 1px solid #7954b6;
+  border-radius: 5px;
+}
+
+#clients #clients-slider .clients-slider-wrapper hr {
+  grid-column: 1 / 4;
+  margin-top: 25px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+#clients #clients-slider .clients-slider-wrapper .clients-text {
+  grid-column: 1 / 4;
+}
+
+#clients #clients-slider .clients-slider-wrapper .clients-text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #565656;
+  line-height: 30px;
+  margin: 5px 0;
+}
+
+#clients #clients-slider .clients-slider-wrapper .client-date {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ccc;
+  grid-column: 1 / 4;
+  margin: 5px 0;
+}
+
+#clients #clients-slider .clients-slider-wrapper .client-icon {
+  grid-column: 1 / 4;
+  color: #ccc;
+}
+
+#clients #clients-slider .clients-slider-wrapper .client-icon i {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+#clients #clients-slider .clients-slider-wrapper .client-icon i:nth-child(2) {
+  margin: 0 10px;
 }
