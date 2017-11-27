@@ -33,8 +33,13 @@ h1::selection,h2::selection,h3::selection,h4::selection,p::selection,a::selectio
     background-color: $c-purple !important;
     border-color: $c-purple !important;
 }
+.done{
+    color: $c-purple !important;
+}
 .main-btn{
+    display: block;
     padding: 15px 35px;
+    max-width: 155px;
     color: $c-white;
     text-transform: uppercase;
     font: {
