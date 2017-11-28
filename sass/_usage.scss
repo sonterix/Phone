@@ -13,7 +13,7 @@ ul{
 ul li{
     list-style: none;
 }
-h1::selection,h2::selection,h3::selection,h4::selection,p::selection,a::selection,li::selection{
+*::selection{
     color: $c-white;
     background-color: $c-purple;
 }
@@ -37,7 +37,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,p::selection,a::selectio
     color: $c-purple !important;
 }
 .main-btn{
-    display: block;
+    display: inline-block;
     padding: 15px 35px;
     max-width: 155px;
     color: $c-white;
@@ -48,7 +48,7 @@ h1::selection,h2::selection,h3::selection,h4::selection,p::selection,a::selectio
     }
     background-color: $c-purple;
     border: 1px solid $c-purple;
-    border-radius: 30px; 
+    border-radius: 35px; 
 }
 .main-btn:hover{
     background-color: $c-pink;

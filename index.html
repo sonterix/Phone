@@ -10,6 +10,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -53,7 +55,7 @@
         <div id="header-content">
             <h1>Create Your App Page With Approbic</h1>
             <p>We ensure quality & support. People love us & we love them. Lorem ipsum dolor sit amet, consectetur bradipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="" class="main-btn">download app</a>
+            <a href="#download" class="main-btn">download app</a>
         </div>
     </heade>
 
@@ -81,7 +83,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicingelitr eiciendis autem aperiam.</p>
             </div>
             <div>
-                <p>Interested in more? <span>View All Features</span></p>
+                <p>Interested in more? <a href="#features"><span>View All Features</span></a></p>
             </div>
         </div>
     </section>
@@ -173,7 +175,7 @@
                     <li><i class="fa fa-check" aria-hidden="true"></i> Retina Ready</li>
                     <li><i class="fa fa-check" aria-hidden="true"></i> Fullscreen Cover</li>
                 </ul>
-                <a href="" class="main-btn">Sign in now</a>
+                <a href="#download" class="main-btn">Sign in now</a>
             </div>
             <div class="price-box">
                 <p>Best Pack</p>
@@ -186,7 +188,7 @@
                     <li><i class="fa fa-check" aria-hidden="true"></i> Retina Ready</li>
                     <li><i class="fa fa-check" aria-hidden="true"></i> Fullscreen Cover</li>
                 </ul>
-                <a href="" class="main-btn">Sign in now</a>
+                <a href="#download" class="main-btn">Sign in now</a>
             </div>
             <div class="price-box">
                 <p>Premium Pack</p>
@@ -199,45 +201,178 @@
                     <li><i class="fa fa-check done" aria-hidden="true"></i> Retina Ready</li>
                     <li><i class="fa fa-check done" aria-hidden="true"></i> Fullscreen Cover</li>
                 </ul>
-                <a href="" class="main-btn">Sign in now</a>
+                <a href="#download" class="main-btn">Sign in now</a>
             </div>
         </div>
     </section>
     
     <section id="clients">
-        <div id="clients-title">
-            <h1>What Others Are Saying</h1>
-            <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
-            <hr>
-        </div>
-        <div id="clients-slider">
-            <div class="clients-slider-wrapper">
-                <div class="clients-img"></div>
-                <div class="clients-data">
-                    <h3>Richard Parker</h3>
-                    <p>@richpark</p>
-                </div>
-                <div class="clients-btn">
-                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i> FOLLOW</a>
-                </div>
+        <div class="wrapper" id="clients-wrapper">
+            <div id="clients-title">
+                <h1>What Others Are Saying</h1>
+                <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
                 <hr>
-                <div class="clients-text">
-                    <p>Your project looks great on any device. Content can be easily read and a user understands freely what you wanted to say him or her. Your project looks great on any device. </p>
+            </div>
+            <div id="clients-slider">
+                <div class="clients-slider-wrapper">
+                    <div class="clients-img"></div>
+                    <div class="clients-data">
+                        <h3>Richard Parker</h3>
+                        <p>@richpark</p>
+                    </div>
+                    <div class="clients-btn">
+                        <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i> FOLLOW</a>
+                    </div>
+                    <hr>
+                    <div class="clients-text">
+                        <p>Your project looks great on any device. Content can be easily read and a user understands freely what you wanted to say him or her. Your project looks great on any device. </p>
+                    </div>
+                    <div class="client-date">
+                        <span>3:17 AM</span><span> - </span><span>18 Mar 2016</span>
+                    </div>
+                    <div class="client-icon">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="client-date">
-                    <span>3:17 AM</span><span> - </span><span>18 Mar 2016</span>
+                <div class="clients-slider-wrapper">
+                    <div class="clients-img"></div>
+                    <div class="clients-data">
+                        <h3>Richard Parker</h3>
+                        <p>@richpark</p>
+                    </div>
+                    <div class="clients-btn">
+                        <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i> FOLLOW</a>
+                    </div>
+                    <hr>
+                    <div class="clients-text">
+                        <p>Your project looks great on any device. Content can be easily read and a user understands freely what you wanted to say him or her. Your project looks great on any device. </p>
+                    </div>
+                    <div class="client-date">
+                        <span>3:17 AM</span><span> - </span><span>18 Mar 2016</span>
+                    </div>
+                    <div class="client-icon">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
                 </div>
-                <div class="client-icon">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
-                    <i class="fa fa-retweet" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                <div class="clients-slider-wrapper">
+                    <div class="clients-img"></div>
+                    <div class="clients-data">
+                        <h3>Richard Parker</h3>
+                        <p>@richpark</p>
+                    </div>
+                    <div class="clients-btn">
+                        <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i> FOLLOW</a>
+                    </div>
+                    <hr>
+                    <div class="clients-text">
+                        <p>Your project looks great on any device. Content can be easily read and a user understands freely what you wanted to say him or her. Your project looks great on any device. </p>
+                    </div>
+                    <div class="client-date">
+                        <span>3:17 AM</span><span> - </span><span>18 Mar 2016</span>
+                    </div>
+                    <div class="client-icon">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i>
+                        <i class="fa fa-retweet" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="blog">
+        <div class="wrapper" id="blog-wrapper">
+            <div id="blog-title">
+                <h1>What Others Are Saying</h1>
+                <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+                <hr>
+            </div>
+            <div id="blog-content">
+                <div class="blog-box">
+                    <img src="img/img1.jpg" alt="1">
+                    <h2>Consectetuer adipiscing elit</h2>
+                    <p class="box-title">Posted On 25th September 2014</p>
+                    <p>Your project looks great on any device. Content can be easily read and a user understands freely what you wanted to say him or her.</p>
+                    <a class="main-btn" href="#about">Read more</a>
+                </div>
+                <div class="blog-box">
+                    <img src="img/img2.jpg" alt="2">
+                    <h2>Consectetuer adipiscing elit</h2>
+                    <p class="box-title">Posted On 25th September 2014</p>
+                    <p>Your project looks great on any device. Content can be easily read and a user understands freely what you wanted to say him or her.</p>
+                    <a class="main-btn" href="#about">Read more</a>
+                </div>
+                <div class="blog-box">
+                    <img src="img/img3.jpg" alt="3">
+                    <h2>Consectetuer adipiscing elit</h2>
+                    <p class="box-title">Posted On 25th September 2014</p>
+                    <p>Your project looks great on any device. Content can be easily read and a user understands freely what you wanted to say him or her.</p>
+                    <a class="main-btn" href="#about">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download">
+        <div class="wrapper" id="download-wrapper">
+            <h1>Download our app from</h1>
+            <p>
+                A better way to present your app using fully featured appsperia template. <br>
+                Now available on the App Store and Play Store!
+                </p>
+            <hr>
+            <div id="download-link">
+                <a href="https://itunes.apple.com"><i class="fa fa-apple" aria-hidden="true"></i> app store</a>
+                <a href="https://play.google.com"><i class="fa fa-android" aria-hidden="true"></i> play store</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div id="contact-left-wrapper">
+            <div id="contact-left">
+                <h1>Contact Us</h1>
+                <p>Tempora similique excepturi obcaecati, maiores nostrum esse illo in soluta at saepe perspiciatis eos quasi laudantium sunt ad quaerat?</p>
+                <div id="contact-data">
+                    <p>
+                        (977) 324 644 676 / <br>
+                        (800) 123 456 789
+                    </p>
+                    <p>admin@power-boosts.com</p>
+                    <p>No 40 Baria Sreet 133/2 New York City, NY, United States</p>
+                </div>
+                <div id="contact-icons">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-google-wallet" aria-hidden="true"></i>
+                    <i class="fa fa-behance" aria-hidden="true"></i>
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div id="contact-right">
+            <form action="">
+                <label for="Contact[name]">Name</label>
+                <input type="text" name="Contact[name]" required>
+                <label for="Contact[email]">Email</label>                    
+                <input type="email" name="Contact[email]" required>
+                <label for="Contact[subject]">Subject</label>
+                <input type="text" name="Contact[subject]" required>
+                <label for="Contact[messsage]">Messsage</label>
+                <textarea name="Contact[messsage]" cols="30" rows="5" required></textarea>
+                <button class="main-btn" type="submit">SEND</button>
+            </form>
+        </div>
+    </footer>
+
     <!-- JS -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
