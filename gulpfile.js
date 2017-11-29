@@ -3,7 +3,7 @@ var gulp = require('gulp'), // подключение gulp
 
 gulp.task('sass', function(){ // создание таска sass
     return gulp.src(['sass/**/*.sass', 'sass/**/*.scss']) // источник
-    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError)) // преобразование sass в css
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)) // преобразование sass в css
     .pipe(gulp.dest('css')) // помещаем результат в папку css
 });
 

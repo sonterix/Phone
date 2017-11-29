@@ -6,6 +6,16 @@
         $(this).addClass('active');
     })
 
+    // humburger
+    $('#humburger').on('click', function(){
+        $('#humburger #humb-wrapper div').toggleClass('humburger-open');
+        $('#header nav ul').toggleClass('humburger-menu');
+    });
+    $('#header nav ul a').on('click', function(){
+        $('#humburger #humb-wrapper div').removeClass('humburger-open');
+        $('#header nav ul').removeClass('humburger-menu');
+    });
+
     // click dot
     $('#dots span').on('click', function(){
         $('.active-dot').removeClass('active-dot');
@@ -25,6 +35,7 @@
     });
 
     // slick
+    /*
     $('#clients-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -33,5 +44,5 @@
         autoplay: true,
         autoplaySpeed: 1500,
     });
-
+*/
 })(jQuery);
