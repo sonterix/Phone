@@ -92,19 +92,19 @@ ul li{
     display: flex !important;
     flex-direction: column;
     text-align: center;
-    margin-top: 20px !important;
+    opacity: 1 !important;
     animation: humb-menu 0.5s ease-in-out;
 }
 
 @keyframes humb-menu{
     0%{
         display: none;
-        margin-top: -100px;
+        opacity: 0;
     }
     50%{
         display: flex !important;
     }
     100%{
-        margin-top: 20px;
+        opacity: 1;
     }
 }

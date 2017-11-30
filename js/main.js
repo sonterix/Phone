@@ -34,15 +34,4 @@
         return false;
     });
 
-    // slick
-    /*
-    $('#clients-slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 1500,
-    });
-*/
 })(jQuery);

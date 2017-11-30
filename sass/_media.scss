@@ -32,4 +32,192 @@
             }
         }
     }
+    #features{
+        #features-content{
+            div{
+                h2,p{
+                    width: 80%;
+                }
+            } 
+        } 
+        #features-slider{
+            background-size: 85%;
+            background-position: center 10%;
+        }
+    }
+    #about{
+        #about-wrapper{
+            #about-title{
+                text-align: center;
+                hr{
+                    margin: 40px auto;
+                }
+            }
+            .about-group{
+                text-align: center;
+            }
+        } 
+    }
+    #screenshot{
+        #screenshot-title, #screenshot-content{
+            margin: 0 5%;
+        }
+    }
+    #pricing{
+        #pricing-wrapper{
+            grid-column-gap: 30px;
+        }
+    }
+    #blog{
+        #blog-wrapper{
+            #blog-content{
+                grid-column-gap: 10px;
+            }
+        } 
+    }
+    #contact{
+        #contact-left-wrapper{
+            #contact-left{
+                max-width: unset;
+                h1,p{
+                    text-align: center;
+                }
+                #contact-data{
+                    p{
+                        text-align: left !important; 
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 680px){
+    #header{
+        grid-template: auto auto auto / 1fr;
+        min-height: unset !important;
+        background-position: center left;
+        #logo{
+            grid-column: 1;
+        }
+        nav{
+            justify-content: flex-start;
+            margin: 0px;
+        }
+        #header-phone{
+            display: none;
+        }
+        #header-content{
+            grid-column: 1;
+            width: 100%;
+            margin: 0 1%;
+            text-align: center;
+            p{
+                margin: 30px 5px 50px 5px;
+            }
+            h1{
+                margin-top: 60px;
+                margin-bottom: 10px; 
+            }
+        }
+    }
+    #features{
+        grid-template: auto auto / 1fr;
+        #features-title{
+            h1,p{
+                width: 100%;
+            }
+        }
+        #features-slider{
+            display: none;
+        }
+        #features-content{
+            margin: 0 5%;
+            div{
+                p{
+                    width: 90%;
+                }
+            }
+        }
+    } 
+    #about{
+        #about-wrapper{
+            grid-template: auto auto auto auto auto auto auto / 1fr;
+            grid-gap: 40px 15px;
+            #about-title{
+                grid-column: 1;
+            }
+        }
+    } 
+    #video{
+        #video-wrapper{
+            grid-template: auto auto / 1fr;
+        }
+    } 
+    #screenshot{
+        grid-template: auto auto auto / 1fr;
+        text-align: center;
+        #screenshot-phone{
+            display: none;
+        }
+        #screenshot-content{
+            max-width: unset !important;
+        }
+    } 
+    #pricing{
+        #pricing-wrapper{
+            grid-template: auto auto auto auto / 1fr;
+            grid-gap: 30px;
+            #pricing-title{
+                grid-column: 1;
+            }
+            .price-box{
+                display: grid;
+                grid-template-rows: auto auto auto auto;
+            }
+        }
+    } 
+    #blog{
+        #blog-wrapper{
+            #blog-content{
+                grid-template: auto auto auto / 1fr;
+                grid-gap: 30px;
+                .blog-box{
+                    text-align: center;
+                    img{
+                        margin: 0 auto;
+                        max-width: unset !important;
+                    }
+                    a{
+                        margin: 30px auto;
+                        padding: 8px 60px;
+                    }
+                } 
+                
+            }
+        }
+    } 
+    #download{
+        #download-wrapper{
+            #download-link{
+                flex-direction: column;
+                a{
+                    margin: 10px 0;
+                }
+            }
+        } 
+    } 
+    #contact{
+        grid-template: auto auto / 1fr;
+        #contact-left-wrapper{
+            #contact-left{
+                #contact-data{
+                    max-width: unset !important;
+                }
+            }
+            #contact-right{
+                max-width: unset !important;
+            } 
+        } 
+    }
 }
