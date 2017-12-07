@@ -19,6 +19,9 @@
         margin: 0 1%;
     }
     #header{
+        grid-template: auto auto auto auto / 1fr;
+        min-height: unset !important;
+        background-position: 80% bottom;
         nav{
             #humburger{
                 display: block;
@@ -31,6 +34,27 @@
                 }
             }
         }
+        #header-phone{
+            min-height: 400px;
+            margin-top: 30px;
+            background-position: center;
+        }
+        #header-content{
+            grid-column: 1;
+            width: 100%;
+            margin: 0 1%;
+            text-align: center;
+            p{
+                margin: 30px 5px 50px 5px;
+            }
+            h1{
+                margin-top: 20px;
+                margin-bottom: 10px; 
+            }
+            a{
+                margin-bottom: 40px;
+            }
+        }   
     }
     #features{
         #features-content{
@@ -94,9 +118,6 @@
 
 @media screen and (max-width: 680px){
     #header{
-        grid-template: auto auto auto / 1fr;
-        min-height: unset !important;
-        background-position: center left;
         #logo{
             grid-column: 1;
         }
@@ -105,21 +126,9 @@
             margin: 0px;
         }
         #header-phone{
-            display: none;
+            min-height: 300px;
         }
-        #header-content{
-            grid-column: 1;
-            width: 100%;
-            margin: 0 1%;
-            text-align: center;
-            p{
-                margin: 30px 5px 50px 5px;
-            }
-            h1{
-                margin-top: 60px;
-                margin-bottom: 10px; 
-            }
-        }
+       
     }
     #features{
         grid-template: auto auto / 1fr;
@@ -184,6 +193,7 @@
                 grid-gap: 30px;
                 .blog-box{
                     text-align: center;
+                    border: none;
                     img{
                         margin: 0 auto;
                         max-width: unset !important;
@@ -213,11 +223,20 @@
             #contact-left{
                 #contact-data{
                     max-width: unset !important;
+                    margin: 50px 15px;
                 }
             }
-            #contact-right{
-                max-width: unset !important;
-            } 
+        } 
+        #contact-right{
+            max-width: unset !important;
+            form{
+                button{
+                    margin: 50px auto 0 auto;
+                    padding: 15px 10px;
+                    max-width: unset;
+                    width: 100%;
+                }
+            }
         } 
     }
 }
