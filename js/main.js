@@ -1,6 +1,7 @@
 (function(){
     new WOW().init();
 
+    
     // click nav 
     $('nav a').on('click', function(){
         $('.active').removeClass('active');
