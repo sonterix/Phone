@@ -1,2 +1,2 @@
 # Phone
-http://guyon.kl.com.ua
+http://sonterix.kl.com.ua/guyon/
